@@ -1,0 +1,113 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="${relativePackage}.${activityClass}" >
+
+    <EditText
+        android:id="@+id/editTextInch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/inchButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextInch"
+        android:layout_centerHorizontal="true"
+        android:text="IN -> CEN" />
+
+    <TextView
+        android:id="@+id/textViewInch"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/inchButton"
+        android:layout_centerHorizontal="true"
+        android:text="Centimeters"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextCenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextInch"
+        android:layout_below="@+id/textViewInch"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/centiButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/inchButton"
+        android:layout_below="@+id/editTextCenti"
+        android:text="CEN -> IN" />
+
+    <TextView
+        android:id="@+id/textViewCenti"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/centiButton"
+        android:layout_centerHorizontal="true"
+        android:text="Inches"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextCenti"
+        android:layout_below="@+id/textViewCenti"
+        android:layout_marginTop="11dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    <Button
+        android:id="@+id/milesButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/centiButton"
+        android:layout_alignTop="@+id/editTextMiles"
+        android:layout_marginTop="30dp"
+        android:text="Miles -> KM" />
+
+    <TextView
+        android:id="@+id/textViewMiles"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/milesButton"
+        android:layout_centerHorizontal="true"
+        android:text="Miles"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editTextKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editTextMiles"
+        android:layout_below="@+id/textViewMiles"
+        android:layout_marginTop="10dp"
+        android:ems="10" />
+
+    <Button
+        android:id="@+id/kmButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/milesButton"
+        android:layout_below="@+id/editTextKM"
+        android:text="KM -> MILES" />
+
+    <TextView
+        android:id="@+id/textViewKM"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/textViewMiles"
+        android:layout_below="@+id/kmButton"
+        android:text="KM"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+</RelativeLayout>
