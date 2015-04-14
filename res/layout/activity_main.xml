@@ -12,7 +12,7 @@
         android:layout_centerHorizontal="true"
         android:ems="10" />
 
-    <Button
+    <Button 
         android:id="@+id/inchButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -20,7 +20,7 @@
         android:layout_centerHorizontal="true"
         android:text="IN -> CEN" />
 
-    <TextView
+    <TextView 
         android:id="@+id/textViewInch"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -29,7 +29,7 @@
         android:text="Centimeters"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
+    <EditText 
         android:id="@+id/editTextCenti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -37,7 +37,7 @@
         android:layout_below="@+id/textViewInch"
         android:ems="10" />
 
-    <Button
+    <Button 
         android:id="@+id/centiButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -45,7 +45,7 @@
         android:layout_below="@+id/editTextCenti"
         android:text="CEN -> IN" />
 
-    <TextView
+    <TextView 
         android:id="@+id/textViewCenti"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -54,7 +54,7 @@
         android:text="Inches"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
+    <EditText 
         android:id="@+id/editTextMiles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -66,7 +66,7 @@
         <requestFocus />
     </EditText>
 
-    <Button
+    <Button 
         android:id="@+id/milesButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -75,7 +75,7 @@
         android:layout_marginTop="30dp"
         android:text="Miles -> KM" />
 
-    <TextView
+    <TextView 
         android:id="@+id/textViewMiles"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -84,7 +84,7 @@
         android:text="Miles"
         android:textAppearance="?android:attr/textAppearanceLarge" />
 
-    <EditText
+    <EditText 
         android:id="@+id/editTextKM"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -93,7 +93,7 @@
         android:layout_marginTop="10dp"
         android:ems="10" />
 
-    <Button
+    <Button 
         android:id="@+id/kmButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -101,8 +101,8 @@
         android:layout_below="@+id/editTextKM"
         android:text="KM -> MILES" />
 
-    <TextView
-        android:id="@+id/textViewKM"
+    <TextView 
+        android:id="@+id/textViewKm"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignRight="@+id/textViewMiles"
